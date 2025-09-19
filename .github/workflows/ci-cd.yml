@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build step
+      - name: Build stepp
         run: echo "Build OK - HTML validated"
 
   deploy:
@@ -20,7 +20,7 @@ jobs:
     needs: build   # This ensures deploy runs only if build is successful
     steps:
       - name: Checkout repository
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Deploy step
         run: echo "Deployment successful to staging"
@@ -30,7 +30,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout repository
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Upload index.png as an artifact
         uses: actions/upload-artifact@v4
