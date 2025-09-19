@@ -3,7 +3,7 @@ name: Simple CI/CD Workflow
 on:
   push:
     branches:
-      - main   # Run this workflow whenever code is pushed to the "main" branch
+      - .github/workflows   # Run this workflow whenever code is pushed to the "main" branch
 
 jobs:
   build:
